@@ -18,8 +18,4 @@ The rest of the technologies will be covered during training.
 
 ## Useful Links
 * [Git Cheat Sheet](https://i.redd.it/8341g68g1v7y.png)
-* [VSCode Website](https://code.visualstudio.com/)
-* [Node.js Website](https://nodejs.org/en/)
-* [Postman Website](https://www.postman.com/downloads/)
-* [Git Website](https://git-scm.com/downloads)
-
+* [Mozilla JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/javascript)
