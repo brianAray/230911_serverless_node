@@ -43,5 +43,6 @@ rl.on('line', (line) => {
 
 rl.once('close', () => {
      // end of input
+     console.log("Goodbye");
  });
 ```
