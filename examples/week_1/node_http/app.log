@@ -1,0 +1,4 @@
+2023-09-14T16:27:09.420Z [info]: This is an info message
+2023-09-14T16:27:09.421Z [error]: This is an error message
+2023-09-14T16:27:09.421Z [warn]: This is a warning message
+2023-09-14T16:27:09.422Z [error]: Uncaught Exception: Random Error
