@@ -104,3 +104,40 @@ In DDB, secondary indexes provide a flexible querying option beyond the primary 
             - Conditional logic for data transformation
         - CASE
             - Perform different actions based on conditions
+
+## DynamoDB Operations
+- put, update, get, delete (single items)
+    - put: create an item or fully replace an item with an existing primary key
+        - If item already exists with given primary key, it will essentially delete the old item and replace it with a new item
+    - update: update some attributes for an item with an existing primary key
+        - If item with primary key doesn't exist, then it will actually create a new item with the "updated attributes"
+    - get: retrieve an item with a given primary key
+        - if item doesn't exist, it will return a blank object (not an error)
+    delete: delete an item with a given primary key
+        - if item doesn't exist, it simply won't really do anything (no error)
+    - query and scan (retrieving groups of items)
+        - query: return all values with a given partition key
+            - We can either query the partition key of the table itself (part of the primary key) OR we can query the partition key of an index (such as global secondary index)
+            - Important point: query allows for efficient access of data in O(1) time complexity
+            - We can utilize filter expressions as well if we want to further refine results
+        - scan: access every single item in the given table or index
+            - Inefficient! Time complexity is O(n)
+            - Can use filter expressions to filter data
+            - Somebody really inexperienced might use scan and then filter for everything
+            - However, this is a very NAIVE approach because of the inefficiencies mentioned
+            - We should think about creating global indices for anything that we want to efficiently query over
+
+## Query v. Scan grocery_items
+    - ex. grocery_items table
+        - grocery_item_id (partition key)
+        - name
+        - quantity
+        - price
+        - category
+    - Naive approach to querying for all items in a given category (ex. meat)
+        - Scan the table and filter based on category equal to "meat"
+        - O(n)
+    - Smart approach
+        - Use query on a global secondary index that has category as the partition key
+        - ex. Query category-index on category (partition key) equal to "meat"
+        - O(1)
