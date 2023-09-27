@@ -1,0 +1,69 @@
+h1 {
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    background-color: #793f3f;
+}
+
+h1, h2, h3 {
+    font-size: 200px;
+    font-weight: lighter;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#unique {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: background: #18EA8D;
+background: -moz-linear-gradient(top, #18EA8D 0%, #E530A2 60%, #00F4CD 100%);
+background: -webkit-linear-gradient(top, #18EA8D 0%, #E530A2 60%, #00F4CD 100%);
+background: linear-gradient(to bottom, #18EA8D 0%, #E530A2 60%, #00F4CD 100%);;
+}
+
+.headers {
+    color: #12e1845b
+}
+
+
+/* Advanced Selectors */
+
+/* Combinator Sibling Selectors */
+
+/* Used to select and style elements taht share the same parent and are located immediately before or after another element */
+
+/* This will highlight the 4th element because we are using the sibling selector */
+.highlight + li {
+    color: green
+}
+
+/* General Sibling Combinator */
+/* Select and style all LI elements following the one from .highlight */
+.highlight ~ li {
+    color: yellow
+}
+
+
+/* Attribute Selectors */
+
+/* Attribute selectors allow you to select elements based on their attributes and attribute values */
+input[type="text"] {
+    color: lightcoral
+}
+
+a[href="https://www.google.com"]{
+    font-size: 89px
+}
+
+/* Pseudo classes */
+input:hover {
+    background-color: aquamarine;
+}
+
+input:focus{
+    color: red
+}

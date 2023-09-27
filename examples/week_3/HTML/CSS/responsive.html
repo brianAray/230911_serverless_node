@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        /* Make a flex container for the nav bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /*Align items horizontally */
+            align-items: center; 
+            background-color: #e0e693;
+            color: #333;
+            padding: 10px;
+            border-color: blue;
+            border-style: dotted;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link {
+            color: #b93636;
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px){
+            .navbar {
+                flex-direction: column; /* stack items vertically */
+                text-align: center;
+            }
+            .nav-link {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    
+</body>
+</html>
