@@ -23,6 +23,12 @@ function NavBar() {
                     <li className='nav-item'>
                         <Link className="nav-link" to="/props">Props</Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link className="nav-link" to="/hooks">Hooks</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link className="nav-link" to="/class">Class Component</Link>
+                    </li>
                 </ul>
             </div>
         </div>
