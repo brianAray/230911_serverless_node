@@ -17,6 +17,6 @@
 |  | Add additional NPM libraries to a React Project to add new, already created functionality                |
 | Nice to Have     | Able to create multiple contexts with createContext()                                                    |
 |      | Able to use the Context.Provider tag to wrap components and distribute application state                 |
-|      | Able to use Nice to Have hooks: useReducer(), useContext()                                                    |
+|      | Able to use advanced hooks: useReducer(), useContext()                                                    |
 |      | Use Jest and a React testing library to test components                                                    |
-|      | Leverage Nice to Have routing techniques to create parent-child routing or pass variables into routes         |
+|      | Leverage advanced routing techniques to create parent-child routing or pass variables into routes         |
