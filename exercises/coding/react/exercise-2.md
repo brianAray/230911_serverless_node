@@ -34,16 +34,3 @@ This exercise involves creating a new component called PokemonDetail that displa
 ## Deliverables
 
 - A working PokemonDetail component that displays additional information about a selected Pokemon
-- A loom recording titled `React Exercise 3 (Creating a Pokemon Detail Page) firstName lastName`
-    - Softskills and Presentation
-        - Be centered on the camera
-        - Look into the camera, not at the screen
-            - This how you emulate eye contact while on camera
-        - This should be professionally presented
-            - You do not need to wear professional clothes
-    - Introduce what you have done
-    - Explain how you approached it, and why you chose the decisions you did
-    - Talk about what you used in the exercise (React features) and why
-    - Provide a simple walkthrough, with first a demonstration of the component and then an explanation of its code
-        - In the explanation, use technical keywords as much as possible instead of just descriptions
-    - Treat this as a product delivery to a manager
